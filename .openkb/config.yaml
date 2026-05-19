@@ -1,0 +1,5 @@
+# model: deepseek/deepseek-v4-flash
+# model: deepseek/deepseek-v4-pro
+model: deepseek/deepseek-chat
+language: ko
+pageindex_threshold: 20

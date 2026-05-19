@@ -1,0 +1,54 @@
+site_name: My AI Wiki
+site_description: AI Wiki powered by MkDocs
+site_author: keehyun
+
+docs_dir: wiki
+site_dir: site
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Concepts: concepts/
+  - Explorations: explorations/
+  - Summaries: summaries/
+  - Sources: sources/
+  - Agents: AGENTS.md
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ko
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
