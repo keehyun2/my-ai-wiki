@@ -1,6 +1,22 @@
-site/
-__pycache__/
-*.pyc
-.venv/
+# Environment variables
 .env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Quartz
+public/
+.quartz-cache/
