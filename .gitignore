@@ -20,3 +20,6 @@ Thumbs.db
 # Quartz
 public/
 .quartz-cache/
+
+# Local Netlify folder
+.netlify
